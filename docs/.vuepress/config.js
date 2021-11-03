@@ -103,7 +103,7 @@ module.exports = {
       indexName: "terra-project",
     },
     nav: [
-      { text: "Learn/Get started", link: "/Learn/" },
+      { text: "Learn", link: "/Learn/" },
       { text: "Developers", link: "/Developers/" },
       { text: "Validators", link: "/Validators/" },
       { text: "Ecosystem", link: "/Ecosystem/" },
@@ -120,40 +120,36 @@ module.exports = {
         {
           title: "Get started",
           children: [
-            "/Tutorials/Get-started/Terra-Station-desktop",
-            "/Tutorials/Get-started/Terra-Station-extension",
-            "/Tutorials/Get-started/Terra-Station-mobile",
+            "/Learn/Get-started/Terra-Station-desktop",
+            "/Learn/Get-started/Terra-Station-extension",
+            "/Learn/Get-started/Terra-Station-mobile",
           ],
           collapsable: true,
         },
         {
-          title: "Build a simple Terra dApp",
+          title: "Concepts",
           children: [
-            "/Tutorials/Smart-contracts/Overview",
-            "/Tutorials/Smart-contracts/Build-Terra-dApp",
-            "/Tutorials/Smart-contracts/Set-up-local-environment",
-            "/Tutorials/Smart-contracts/Write-smart-contract",
-            "/Tutorials/Smart-contracts/Interact-with-smart-contract",
-            "/Tutorials/Smart-contracts/Manage-CW20-tokens",
+            "/Learn/Concepts/Protocol",
+            "/Learn/Concepts/glossary",
+          ],
+          collapsable: true,
+        },
+        {
+          title: "Developers",
+          children: [
+            "/Learn/Terra-Station/Wallet",
+            "/Learn/Terra-Station/Testnet",
+            "/Learn/Terra-Station/Staking",
+            "/Learn/Terra-Station/Swap",
+            "/Learn/Terra-Station/Governance",
+            "/Learn/Terra-Station/Contracts",
+
           ],
           collapsable: true,
         },
       ],
       "/How-to/": [
         "/How-to/",
-        {
-          title: "Use Terra Station",
-          children: [
-            "/How-to/Terra-Station/Wallet",
-            "/How-to/Terra-Station/Testnet",
-            "/How-to/Terra-Station/Staking",
-            "/How-to/Terra-Station/Swap",
-            "/How-to/Terra-Station/Governance",
-            "/How-to/Terra-Station/Contracts",
-
-          ],
-          collapsable: true,
-        },
         {
           title: "Run a full Terra node",
           children: [
