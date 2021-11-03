@@ -103,11 +103,10 @@ module.exports = {
       indexName: "terra-project",
     },
     nav: [
-      { text: "Overview", link: "/" },
-      { text: "Tutorials", link: "/Tutorials/" },
-      { text: "How to", link: "/How-to/" },
-      { text: "Concepts", link: "/Concepts/" },
-      { text: "Reference", link: "/Reference/" },
+      { text: "Learn/Get started", link: "/Learn/" },
+      { text: "Developers", link: "/Developers/" },
+      { text: "Validators", link: "/Validators/" },
+      { text: "Ecosystem", link: "/Ecosystem/" },
       {
         text: "GitHub",
         link: "https://github.com/terra-money/core",
@@ -116,8 +115,8 @@ module.exports = {
     ],
     sidebar: {
 
-      "/Tutorials/": [
-        "/Tutorials/",
+      "/Learn/": [
+        "/Learn/",
         {
           title: "Get started",
           children: [
