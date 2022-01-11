@@ -1,4 +1,4 @@
-# Using Terrain
+# Using Terrain with LocalTerra
 
 With Terrain installed you can now scaffold your new application:
 

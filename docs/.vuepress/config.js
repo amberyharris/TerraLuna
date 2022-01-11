@@ -132,7 +132,8 @@ module.exports = {
           title: "Developer's 5-minute guide",
           children: [
             "/Tutorials/Quick-start/Initial-setup",
-            "/Tutorials/Quick-start/Using-Terrain",
+            "/Tutorials/Quick-start/Using-Terrain-localterra",
+            "/Tutorials/Quick-start/Using-Terrain-testnet",
           ],
           collapsable: true,
         },

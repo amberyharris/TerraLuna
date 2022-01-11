@@ -12,20 +12,7 @@ Terrain will help you:
 
 ## Prerequisites
 
-
-## 1. Download LocalTerra
-
-LocalTerra is a development environment designed to make it easy for smart contract developers to test their contracts locally.
-
-To download LocalTerra, run the following command:
-
-```sh
-git clone --branch v0.5.2 --depth 1 https://github.com/terra-money/localterra
-cd localterra
-docker-compose up
-```
-
-## 2. Set up Rust
+## 1. Set up Rust
 
 Rust is the main programming language used for CosmWasm smart contracts. While WASM smart contracts can theoretically be written in any programming language, CosmWasm libraries and tooling work best with Rust.
 
@@ -46,9 +33,39 @@ cargo install cargo-generate --features vendored-openssl
 cargo install cargo-run-script
 ```
 
-## 3.  Install Terrain
+## 2. Install Terrain
 
 Use npm to install the terrain command-line tool globally:
 
 ```sh
 npm install -g @iboss/terrain
+```
+
+## 3. Download LocalTerra or configure testnet
+
+LocalTerra is a development environment designed to make it easy for smart contract developers to test their contracts locally.
+
+There's a few situations where LocalTerra isn't working properly today. Please check the following situations to determine if you should use the Bombay testnet instead of LocalTerra: 
+
+1. M1 or ARM based hardware like newer Apple products. 
+1. Computer with less than 16 gigs of RAM.
+
+### LocalTerra
+
+To download LocalTerra, run the following command:
+
+```sh
+git clone --branch v0.5.2 --depth 1 https://github.com/terra-money/localterra
+cd localterra
+docker-compose up
+```
+
+### Testnet
+
+First create a new wallet using the Terra station extension. It's recommended to name this wallet bombay or testnet so it's easy to remember that it's only used for bombay.
+
+After creating a bombay wallet and storing the seed phrase you can request funds from the testnet faucet: 
+
+https://faucet.terra.money
+
+Make sure you have your seed phrase stored somewhere since you will need it in the next section.
